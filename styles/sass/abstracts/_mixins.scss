@@ -1,0 +1,47 @@
+@mixin devices ($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (min-width: 320px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media (min-width: 481px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media (min-width: 769px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+}
+
+@mixin fontFamilySizeWeight($familyValue, $sizeValue, $weightValue) {
+  font-family: $familyValue;
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue/20) * 1rem;
+  font-weight: $weightValue;
+}
+
+@mixin fontSize($sizeValue) {
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue/10) * 1rem;
+}
+
+@mixin lineHeight($lineValue) {
+  line-height: $lineValue * 1px;
+  line-height: ($lineValue/20) * 1rem;
+}
+
+@mixin letterSpacing($spacingValue) {
+  letter-spacing: $spacingValue * 1px;
+  letter-spacing: ($spacingValue/20) * 1rem;
+}
