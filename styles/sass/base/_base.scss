@@ -1,0 +1,17 @@
+// skipLink Styles
+.skipLink {
+  background-color: white;
+  color: black;
+  // font-size: 1rem;
+  padding: 10px 0;
+  position: absolute;
+  left: -1000px;
+  top: 0;
+  z-index: 999;
+
+  &:focus {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
