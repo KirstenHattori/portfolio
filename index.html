@@ -5,18 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/6f07dba2d2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="./styles/style.css">
   <title>kirstenCodes</title>
 </head>
 <body>
   <a href="#mainContent" class="skipLink">Skip to the main content.</a>
-  <nav>
-    <div class="wrapper">
-      <ul>
-        <li><a href="home">home</a></li>
+  
+  <nav class="mobileNav">
+    <div class="wrapper flexContainer">
+      <h6>kirCodes</h6>
+      <div class="slideController">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars-staggered"></i>
+        <i class="fa-solid fa-lines-leaning"></i>
+      </div><!--/.slideController-->
+      <div class="slider">
+        <ul class="nav">
+          <li><a href="about">about</a></li>
+          <li><a href="projects">projects</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
+        <ul class="contactLinks">
+          <li><a href="./assets/resume-Kirsten-Hattori.pdf" download><i class="fa-sharp fa-solid fa-file"></i></a></li>
+          <!-- for:👆 aria-description="Download a copy of my resume" -->
+          <li><a href="mailto:kirstenmhattori@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+          <li><a href="https://github.com/ReginaPaxis"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/kirstenhattori"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div><!-- /.slider -->
+    </div><!-- /.wrapper -->
+  </nav>
+
+  <nav class="laptopNav">
+    <div class="wrapper flexContainer">
+      <h6>kirCodes</h6>
+      <ul class="nav">
         <li><a href="about">about</a></li>
         <li><a href="projects">projects</a></li>
         <li><a href="contact">contact</a></li>
+      </ul>
+      <ul class="contactLinks">
+        <li><a href="./assets/resume-Kirsten-Hattori.pdf" download><i class="fa-sharp fa-solid fa-file"></i></a></li>
+        <!-- for:👆 aria-description="Download a copy of my resume" -->
+        <li><a href="mailto:kirstenmhattori@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+        <li><a href="https://github.com/ReginaPaxis"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/kirstenhattori"><i class="fa-brands fa-linkedin"></i></a></li>
       </ul>
     </div><!-- /.wrapper -->
   </nav>
@@ -24,112 +61,93 @@
   <header>
     <div class="wrapper">
       <h1>kirsten hattori</h1>
-      <h3>Rhymes with <!-- strings from the rhymesWithArrays will be output here  --></h3> 
+      <h3>(Rhymes with <span class="rhymes"><!-- strings from the rhymesWithArrays will be output here  --></span>)</h3>
+      <button class="also">what else rhymes?</button>
       <h2>ux front end web developer</h2>
-      <a href="./assets/resume-Kirsten-Hattori.pdf" download>resume</a>
-      <!-- for:👆 aria-description="Download a copy of my resume" -->
     </div><!-- /.wrapper -->
   </header>
   <main id="mainContent">
     <section class="about" id="about">
       <div class="wrapper">
         <h2>who am i?</h2>
-        <p>Helloooo! I'm Kirsten Hattori, my name rhymes with <!--also where random string from rhymeswhitearray will be spat out--> and I'm a front end web developer passionate about learning and skill development in all facets of life. A creative problem solver with a keen eye for detail who enjoys writing clean, responsive, and accessible code while drawing on knowledge of UX design principles and practices.
+        <p>Helloooo! I'm Kirsten Hattori, a front end web developer driven by learning and skill development in all facets of life. A creative problem solver with a keen eye for detail who enjoys writing clean, responsive, and accessible code while drawing on knowledge of UX design principles and practices.
         </p>
         <p>
-          background in retail and e-commerce and passionate about shopping local and
-          small.
+          With a professional background in retail and e-commerce on teams from customer service, merchandizing, order fulfillment, and business operations combined with a passion for shopping small, independent, and local I would like to work with independent, small, and local businesses and creators to enhance their online presence.
         </p> 
         <p>
-          I would like to work with independent, small, and/or local businesses and creators to enhance their online presence and maximize their reach potnetial
+          My education before bootcamp focused on interdisciplinary studies with a focus on psychology and sociology studying towards a profession in special education. My own experience with special education inspired this desire in me to help learners of all abilities make their strengths and weaknesses work for them.
         </p>
         <p>
           Outside of learning, my interests include knitting, skiing, gardening, jigsaw and sudoku puzzles, and hiking with my doggo, Murphy. 
         </p>
-        <img src="./assets/portfolioAboutMe.jpeg" alt="photo of me standing on snow in front of a sunset">
+        <img src="./assets/portfolioAboutMeCompressed.jpeg" alt="photo of me standing on snow in front of a sunset">
       </div> <!-- /.wrapper -->
-    </section> <!-- /.about -->
+    </section> <!--/.about-->
 
     <section class="skills" id="skills">
       <div class="wrapper">
         <ul class="skills">
           <li>
             <i aria-hidden="true" class="fa-solid fa-universal-access"></i>
-            <p>Web Accessibility</p>
+            <h5>Web Accessibility</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-solid fa-mobile-screen"></i>
-            <p>Responsive Design</p>
+            <h5>Responsive Design</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-brands fa-html5"></i>
-            <p>HTML5</p>
+            <h5>HTML5</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-brands fa-css3-alt"></i>
-            <p>CSS3</p>
+            <h5>CSS3</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-brands fa-sass"></i>
-            <p>SASS</p>
+            <h5>SASS</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-brands fa-js"></i>
-            <p>JavaScript</p>
+            <h5>JavaScript</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-brands fa-react"></i>
-            <p>React</p>
+            <h5>React</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-solid fa-cloud"></i>
-            <p>RESTful APIs</p>
+            <h5>RESTful APIs</h5>
           </li>
           <li>
-            <i aria-hidden="true" class="fa-solid fa-database"></i>
-            <p>Firebase</p>
+            <i aria-hidden="true" class="devicon-firebase-plain"></i>
+            <h5>Firebase</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-brands fa-git-alt"></i>
-            <p>Git</p>
+            <h5>Git</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-brands fa-github"></i>
-            <p>GitHub</p>
+            <h5>GitHub</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-solid fa-chalkboard"></i>
-            <p>Miro</p>
+            <h5>Miro</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-brands fa-figma"></i>
-            <p>Figma</p>
+            <h5>Figma</h5>
           </li>
           <li>
             <i aria-hidden="true" class="fa-solid fa-calendar-check"></i>
-            <p>Asana</p>
+            <h5>Asana</h5>
           </li>
           
         </ul>
       </div><!-- /.wrapper -->
     </section> <!-- /.skills-->
-
-    <section class="process" id="process">
-      <div class="wrapper">
-        <h2>how do i work?</h2>
-        <ul>
-          <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, non? Perferendis, explicabo repudiandae? Quasi accusamus consequatur eum a laudantium neque eius dolor maxime accusantium ducimus, iusto id, tenetur asperiores libero.</p>
-          </li>
-          <li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores vero a obcaecati molestiae. Tempore perspiciatis animi voluptatem quibusdam, delectus illum quis, magnam, porro aperiam nesciunt enim! Possimus qui reprehenderit est.</p>
-          </li>
-          <li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores vero a obcaecati molestiae. Tempore perspiciatis animi voluptatem quibusdam, delectus illum quis, magnam, porro aperiam nesciunt enim! Possimus qui reprehenderit est.</p>
-          </li>
-        </ul>
-      </div><!-- /.wrapper -->
-    </section> <!-- /.process-->
 
     <section class="projects" id="projects">
       <div class="wrapper">
@@ -137,11 +155,11 @@
           <ul class="projects">
             <li>
               <div class="txtContainer">
+                <h5>HTML5 | CSS3 | Git | GitHub</h5>
                 <h4>Panda Sanctuary</h4>
                 <p>PSD conversion of a client brief.</p>
-                <h5>HTML5 | CSS3 | Git | GitHub</h5>
                 <ul class="projectLinks">
-                  <li><a aria-description="go to GitHub repo for Panda Sanctuary's codebase" href="https://github.com/ReginaPaxis/assignment1.git" class="buttonesk">repo</a></li>
+                  <li><a aria-description="go to GitHub repo for Panda Sanctuary's codebase" href="https://github.com/ReginaPaxis/assignment1.git" class="buttonesk">code</a></li>
                   <li><a aria-description="go to live site of Panda Sanctuary" href="***live" class="buttonesk">live</a></li>
                 </ul>
               </div>
@@ -150,11 +168,11 @@
             <li>
               <div class="txtContainer">
                 <h4>Bar-One</h4>
+                <h5>HTML5 | CSS3 | SCSS | JS | Git | GitHub</h5>
                 <p>Design conversion of a multi-page website for a client in the food service industry. Fully accessible and responsive to
                 screen sizes as small as 320 pixels wide.</p>
-                <h5>HTML5 | CSS3 | SCSS | JS | Git | GitHub</h5>
                 <ul class="projectLinks">
-                  <li><a aria-description="go to GitHub repo for Bar-One's codebase" href="https://github.com/ReginaPaxis/kirstenHattoriProjectOne.git" class="buttonesk">repo</a></li>
+                  <li><a aria-description="go to GitHub repo for Bar-One's codebase" href="https://github.com/ReginaPaxis/kirstenHattoriProjectOne.git" class="buttonesk">code</a></li>
                   <li><a aria-description="go to live site of Bar-One" href="https://bar-none.netlify.app/" class="buttonesk">live</a></li>
                 </ul>
               </div>
@@ -163,11 +181,11 @@
             <li>
               <div class="txtContainer">
                 <h4>Gettin' Games</h4>
+                <h5>HTML5 | CSS3 | SCSS | JS | Git | GitHub | Miro | Asana</h5>
                 <p>Pair-programmed an original UI design, interactive web application utilizing user selections to make an API call and
                 display a list of video games that meets their filter criteria.</p>
-                <h5>HTML5 | CSS3 | SCSS | JS | Git | GitHub | Miro | Asana</h5>
                 <ul class="projectLinks">
-                  <li><a aria-description="go to GitHub repo for Gettin' Game's codebase" href="https://github.com/tyiu130/gettingGames.git" class="buttonesk">repo</a></li>
+                  <li><a aria-description="go to GitHub repo for Gettin' Game's codebase" href="https://github.com/tyiu130/gettingGames.git" class="buttonesk">code</a></li>
                   <li><a aria-description="go to live site of Gettin' Games" href="https://gettin-games.netlify.app/" class="buttonesk">live</a></li>
                 </ul>
               </div>
@@ -179,14 +197,28 @@
 
     <section class="contact" id="contact">
       <div class="wrapper">
-        <h2>connect with me</h2>
+        <div class="txtContainer">
+          <h2>connect with me</h2>
+          <p>I would love to hear from you if you're looking for help with your online presence or just want to chat over a cup of caffeine.</p>
+        </div><!-- /.txtContainer -->
+        <form action="" method="" class="contact">
+          <label for="name" class="titlesk">name</label>
+          <input type="text" id="name">
 
+          <label for="email" class="titlesk">email</label>
+          <input type="email" id="email">
+
+          <label for="message" class="titlesk">message</label>
+          <input type="text" id="message">
+
+          <button>send</button>
+        </form>
       </div><!-- /.wrapper -->
     </section> <!-- /.contact-->
   </main>
   <footer>
     <div class="wrapper">
-      <p>designed and developed with TLC by Kirsten Hattori</p>
+      <p>developed with TLC by Kirsten Hattori in 2022</p>
     </div><!-- /.wrapper -->
   </footer>
 

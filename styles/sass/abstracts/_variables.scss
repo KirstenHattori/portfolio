@@ -1,16 +1,15 @@
-@import url('');
-// the link to the font will go in the '' and the css line from the google font will go in the site fonts ***
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Raleway&display=swap');
 
 // SITE FONTS
-$primaryFont: ***;
-$secondaryFont: ***;
+$primaryFont: 'Josefin Slab', serif;
+$secondaryFont: 'Raleway', sans-serif;
 
 $baseFontSize: 1rem;
 
 // SITE COLOURS
-$primary: #;
-$secondary: #;
-$tertiary: #;
-$quaternary: #;
-$quinary: #;
+$primary: #14070E;
+$secondary: #365C46;
+$tertiary: #424B6D;
+$quaternary: #F8F4F3;
+$quinary: #F7E4DC;
+$seniary: #DB9999;

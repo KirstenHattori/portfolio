@@ -15,3 +15,11 @@
     text-align: center;
   }
 }
+
+// strip defaults
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
