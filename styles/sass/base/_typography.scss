@@ -27,7 +27,7 @@ h5,
 a, 
 button,
 .titlesk {
-  @include fontFamilySizeWeight($secondaryFont, 20, regular);
+  @include fontFamilySizeWeight($secondaryFont, 20, bold);
   text-transform: uppercase;
 }
 
