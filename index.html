@@ -15,56 +15,59 @@
 <body>
   <a href="#mainContent" class="skipLink">Skip to the main content.</a>
   
-  <nav class="mobileNav">
+  <nav class="navBar">
     <div class="wrapper flexContainer">
       <h6>kirCodes</h6>
-      <div class="slideController">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-bars-staggered"></i>
-        <i class="fa-solid fa-lines-leaning"></i>
-      </div><!--/.slideController-->
-      <div class="slider">
-        <ul class="nav columnal">
+
+      <nav class="mobileNav">
+        <div class="slideController">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-lines-leaning"></i>
+        </div><!--/.slideController-->
+        <div class="slider">
+          <ul class="pageLinks columnal">
+            <li><a href="about">about</a></li>
+            <li><a href="projects">projects</a></li>
+            <li><a href="contact">contact</a></li>
+          </ul>
+          <ul class="contactLinks horizontal">
+            <li><a href="./assets/resume-Kirsten-Hattori.pdf" download><i class="fa-sharp fa-solid fa-file"></i></a></li>
+            <!-- for:👆 aria-description="Download a copy of my resume" -->
+            <li><a href="mailto:kirstenmhattori@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://github.com/ReginaPaxis"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/kirstenhattori"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+        </div><!-- /.slider -->
+      </nav><!--/.mobileNav-->
+
+      <nav class="laptopNav">
+        <ul class="pageLinks horizontal">
           <li><a href="about">about</a></li>
           <li><a href="projects">projects</a></li>
           <li><a href="contact">contact</a></li>
         </ul>
         <ul class="contactLinks horizontal">
           <li><a href="./assets/resume-Kirsten-Hattori.pdf" download><i class="fa-sharp fa-solid fa-file"></i></a></li>
-          <!-- for:👆 aria-description="Download a copy of my resume" -->
+              <!-- for:👆 aria-description="Download a copy of my resume" -->
           <li><a href="mailto:kirstenmhattori@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
           <li><a href="https://github.com/ReginaPaxis"><i class="fa-brands fa-github"></i></a></li>
           <li><a href="https://www.linkedin.com/in/kirstenhattori"><i class="fa-brands fa-linkedin"></i></a></li>
         </ul>
-      </div><!-- /.slider -->
-    </div><!-- /.wrapper -->
-  </nav>
+      </nav><!--/.laptopNav-->
 
-  <nav class="laptopNav">
-    <div class="wrapper flexContainer">
-      <h6>kirCodes</h6>
-      <ul class="nav horizontal">
-        <li><a href="about">about</a></li>
-        <li><a href="projects">projects</a></li>
-        <li><a href="contact">contact</a></li>
-      </ul>
-      <ul class="contactLinks horizontal">
-        <li><a href="./assets/resume-Kirsten-Hattori.pdf" download><i class="fa-sharp fa-solid fa-file"></i></a></li>
-        <!-- for:👆 aria-description="Download a copy of my resume" -->
-        <li><a href="mailto:kirstenmhattori@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
-        <li><a href="https://github.com/ReginaPaxis"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/kirstenhattori"><i class="fa-brands fa-linkedin"></i></a></li>
-      </ul>
-    </div><!-- /.wrapper -->
-  </nav>
+    </div><!-- /.wrapper/.flexContainer -->
+  </nav><!--/.navBar-->
+
+
 
   <header>
-    <div class="wrapper">
+    <div class="wrapper txtContainer">
       <h1>kirsten hattori</h1>
       <h3>(Rhymes with <span class="rhymes"><!-- strings from the rhymesWithArrays will be output here  --></span>)</h3>
       <button class="also">what else rhymes?</button>
       <h2>ux front end web developer</h2>
-    </div><!-- /.wrapper -->
+    </div><!-- /.wrapper /.txtContainer-->
   </header>
   <main id="mainContent">
     <section class="about" id="about">

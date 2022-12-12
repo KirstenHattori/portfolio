@@ -5,6 +5,7 @@ html {
 h1 {
   @include fontFamilySizeWeight($primaryFont, 36, regular);
   text-transform: uppercase;
+  color: $quaternary;
 }
 
 h2 {

@@ -1,0 +1,81 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  background-color: $tertiary;
+  z-index: 100;
+  width: 100vw;
+  height: 50px;
+  // padding: 30px;
+  color: $quaternary;
+  
+  .flexContainer {
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+}
+
+
+
+.laptopNav {
+  // visibility: hidden;
+  display: none;
+}
+
+@include devices (laptop){
+  .mobileNav {
+    // visibility: hidden;
+    display: none;
+  }
+  .laptopNav {
+    // visibility: visible;
+    display: block;
+  }
+}
+
+
+.slider {
+  position: fixed;
+}
+
+
+// .slideController {
+//   position: absolute;
+//   right: 0;
+  
+//   @include devices (laptop){
+//     display: none;
+//   }
+// }
+
+// .pageLinks {
+//   // position: absolute;
+//   top: 0px;
+
+//   @include devices (laptop){
+//     // position: relative;
+//     // left: calc(50%);
+//     // top: 0;
+
+//   }
+// }
+
+// .contactLinks {
+//   width: 130px;
+//   position: absolute;
+//   right: -500px;
+
+//   @include devices (laptop){
+//     right: 0;
+//   }
+// }
+
+
+
+
+
+
+
+

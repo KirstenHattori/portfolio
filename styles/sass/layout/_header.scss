@@ -1,0 +1,15 @@
+header {
+  background-image: url(../assets/secondHeroUncompressed.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .txtContainer {
+    background-color: $tertiary;
+    color: $quaternary;
+  }
+}
