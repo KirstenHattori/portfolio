@@ -329,7 +329,7 @@ button,
 .buttonesk {
   background-color: rgb(219, 153, 153);
   padding: 5px 30px;
-  color: rgb(102, 20, 34);
+  color: rgb(248, 244, 243);
   border: none;
 }
 button:hover, button:focus,
@@ -410,4 +410,40 @@ header {
 header .txtContainer {
   background-color: rgba(24, 29, 56, 0.7);
   color: rgb(248, 244, 243);
+}
+
+.about .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (min-width: 769px) {
+  .about .flexContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.about .flexContainer img {
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .flexContainer .txtContainer,
+.about .flexContainer img {
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .about .flexContainer .txtContainer,
+.about .flexContainer img {
+    width: 47%;
+  }
 }

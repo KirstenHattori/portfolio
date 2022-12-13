@@ -1,0 +1,29 @@
+.about {
+  .flexContainer {
+
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @include devices (laptop) {
+      flex-direction: row;
+    }
+
+    
+    img {
+      height: 650px;
+      object-fit: cover;
+
+    }
+
+    .txtContainer,
+    img {
+      width: 100%;
+      @include devices (laptop){
+        width: 47%;
+      }
+    }
+    
+  }
+}
