@@ -457,9 +457,9 @@ header .txtContainer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .skills ul li {
   padding: 20px;
@@ -480,4 +480,39 @@ header .txtContainer {
 .skills ul li h5 {
   margin-top: 20px;
   text-align: center;
+}
+
+.projects h2 {
+  text-align: center;
+}
+.projects ul {
+  margin: 20px auto 20px;
+}
+.projects .project {
+  border: 3px dotted fuchsia;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.projects .projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+@media (min-width: 769px) {
+  .projects .txtContainer {
+    width: 55%;
+  }
+  .projects img {
+    width: 35%;
+  }
 }
