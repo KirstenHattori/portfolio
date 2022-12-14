@@ -26,8 +26,8 @@
 
 @mixin fontFamilySizeWeight($familyValue, $sizeValue, $weightValue) {
   font-family: $familyValue;
-  font-size: $sizeValue * 1px;
-  font-size: ($sizeValue/20) * 1rem;
+  // font-size: $sizeValue * 1px;
+  font-size: $sizeValue * 1rem;
   font-weight: $weightValue;
 }
 

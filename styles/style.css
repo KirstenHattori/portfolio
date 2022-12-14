@@ -228,8 +228,7 @@ html {
 
 h1 {
   font-family: "Josefin Slab", serif;
-  font-size: 36px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: regular;
   text-transform: uppercase;
   color: rgb(248, 244, 243);
@@ -237,8 +236,7 @@ h1 {
 
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 32px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -247,15 +245,13 @@ h3,
 h6,
 p {
   font-family: "Josefin Slab", serif;
-  font-size: 28px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: regular;
 }
 
 h4 {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: regular;
 }
 
@@ -264,7 +260,6 @@ a,
 button,
 .titlesk {
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -272,7 +267,7 @@ button,
 
 h6,
 p {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .skipLink {
@@ -291,6 +286,7 @@ p {
 }
 
 html {
+  font-size: 20px;
   background-color: rgb(248, 244, 243);
   color: rgb(20, 7, 14);
 }
@@ -331,7 +327,7 @@ ul {
 button,
 .buttonesk {
   background-color: rgb(219, 153, 153);
-  padding: 5px 30px;
+  padding: 10px 40px;
   color: rgb(248, 244, 243);
   border: none;
 }
@@ -514,9 +510,9 @@ header .txtContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+}
+.projects .projectLinks a {
+  margin-right: 10px;
 }
 @media (min-width: 769px) {
   .projects .txtContainer {

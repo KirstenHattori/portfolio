@@ -18,6 +18,7 @@
 
 // BASE STYLES - overwritting defaults
 html {
+  font-size: 20px;
   background-color: $quaternary;
   color: $primary;
 }
@@ -64,7 +65,7 @@ ul {
 button,
 .buttonesk {
   background-color: $seniary;
-  padding: 5px 30px;
+  padding: 10px 40px;
   color: $quaternary;
   border: none;
 

@@ -16,7 +16,10 @@
 
   .projectLinks {
     display: flex;
-    justify-content: space-evenly;
+
+    a {
+      margin-right: 10px;
+    }
   }
 
   @include devices (laptop) {
