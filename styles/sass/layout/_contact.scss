@@ -1,0 +1,37 @@
+.contact {
+  .flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    // .txtContainer {
+    //   width: ;
+    // }
+
+    form{
+      display: flex;
+      flex-wrap: wrap;
+
+      input, 
+      textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        
+        // &:focus,
+        // &:hover {
+        //   border: 1pc dotted cyan;
+        // }
+      }
+
+      @include devices (tablet) {
+        width: 55%;
+      }
+    }
+
+@include devices (tablet) {
+    .txtContainer {
+      width: 40%;
+    }
+}
+  }
+}

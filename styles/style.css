@@ -489,7 +489,6 @@ header .txtContainer {
   margin: 20px auto 20px;
 }
 .projects .project {
-  border: 3px dotted fuchsia;
   margin: 40px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,5 +513,38 @@ header .txtContainer {
   }
   .projects img {
     width: 35%;
+  }
+}
+
+.contact .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .flexContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact .flexContainer form input,
+.contact .flexContainer form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media (min-width: 481px) {
+  .contact .flexContainer form {
+    width: 55%;
+  }
+}
+@media (min-width: 481px) {
+  .contact .flexContainer .txtContainer {
+    width: 40%;
   }
 }
