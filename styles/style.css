@@ -577,4 +577,11 @@ header .txtContainer {
 
 footer {
   text-align: center;
+  background-color: rgb(20, 46, 31);
+  color: rgb(248, 244, 243);
+  padding: 20px 0;
+}
+footer p {
+  margin: 0;
+  font-weight: 600;
 }
