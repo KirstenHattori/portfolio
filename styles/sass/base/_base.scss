@@ -50,6 +50,11 @@ a {
   text-decoration: none;
   color: inherit;
   display: inline-block;
+
+  &:hover,
+  &:focus {
+    color: $quinary;
+  }
 }
 
 ul {
@@ -66,6 +71,8 @@ button,
   &:hover,
   &:focus {
     cursor: pointer;
+    background-color: $quinary;
+    color: $quaternary;
   }
 }
 

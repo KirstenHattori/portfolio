@@ -11,5 +11,9 @@ header {
   .txtContainer {
     background-color: $tertiary;
     color: $quaternary;
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 20vh;
+    text-align: center;
   }
 }
