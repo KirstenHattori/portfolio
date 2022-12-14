@@ -17,7 +17,7 @@
   
   <nav class="navBar">
     <div class="wrapper flexContainer">
-      <h6>kirCodes</h6>
+      <h6>kirstenCodes</h6>
 
       <nav class="mobileNav">
         <div class="slideController">
@@ -27,18 +27,18 @@
         </div><!--/.slideController-->
         <div class="slider">
           <ul class="pageLinks columnal">
-            <li><a href="about">about</a></li>
-            <li><a href="projects">projects</a></li>
-            <li><a href="contact">contact</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </div><!-- /.slider -->
       </nav><!--/.mobileNav-->
 
       <nav class="laptopNav">
         <ul class="pageLinks horizontal">
-          <li><a href="about">about</a></li>
-          <li><a href="projects">projects</a></li>
-          <li><a href="contact">contact</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav><!--/.laptopNav-->
 
@@ -149,11 +149,11 @@
                 <h5>HTML5 | CSS3 | Git | GitHub</h5>
                 <p>PSD conversion of a client brief. Compliant with accessibility standards. Developed with a mobile-first approach.</p>
                 <ul class="projectLinks">
-                  <li><a aria-description="go to GitHub repo for Panda Sanctuary's codebase" href="https://github.com/ReginaPaxis/assignment1.git" class="buttonesk">code</a></li>
-                  <li><a aria-description="go to live site of Panda Sanctuary" href="***live" class="buttonesk">live</a></li>
+                  <li><a aria-description="go to GitHub repo for Panda Sanctuary's codebase" href="https://github.com/ReginaPaxis/Panda-Sanctuary.git" class="buttonesk">code</a></li>
+                  <li><a aria-description="go to live site of Panda Sanctuary" href="https://pandasanctuary.netlify.app/" class="buttonesk">live</a></li>
                 </ul>
               </div>
-              <img src="./assets/***" alt="screen shots of Panda Sanctuary on different sized screens">
+              <img src="./assets/pandaSanctuaryCompressed.png" alt="screen shot of Panda Sanctuary on different sized screens">
             </li>
             <li class="project">
               <div class="txtContainer">
@@ -165,19 +165,20 @@
                   <li><a aria-description="go to live site of Bar-One" href="https://bar-none.netlify.app/" class="buttonesk">live</a></li>
                 </ul>
               </div>
-              <img src="./assets/***" alt="screen shots of Bar-One on different sized screens">
+              <img src="./assets/barOneCompressed.png" alt="screen shot of Bar-One on different sized screens">
             </li>
             <li class="project">
               <div class="txtContainer">
                 <h4>Gettin' Games</h4>
                 <h5>HTML5 | CSS3 | SCSS | JS | Git | GitHub | Miro | Asana</h5>
-                <p>Pair-programmed an original UI design, interactive web application utilizing user selections to make an API call and display a list of video games that meets their filter criteria.</p>
+                <p>Original UI design, interactive web application utilizing user selections to make an API call and display a list of video games that meets their filter criteria.</p>
+                  <p>Made with <a href="">Terri Yiu</a></p>
                 <ul class="projectLinks">
                   <li><a aria-description="go to GitHub repo for Gettin' Game's codebase" href="https://github.com/tyiu130/gettingGames.git" class="buttonesk">code</a></li>
                   <li><a aria-description="go to live site of Gettin' Games" href="https://gettin-games.netlify.app/" class="buttonesk">live</a></li>
                 </ul>
               </div>
-              <img src="./assets/***" alt="screen shots of Gettin' Games on different sized screens">
+              <img src="./assets/gettinGamesCompressed.png" alt="screen shot of Gettin' Games on different sized screens">
             </li>
           </ul>
       </div><!-- /.wrapper -->
@@ -196,17 +197,17 @@
             <li><a href="https://www.linkedin.com/in/kirstenhattori"><i class="fa-brands fa-linkedin"></i></a></li>
           </ul>
         </div><!-- /.txtContainer -->
-        <form action="" method="" class="contact">
+        <form action="https://formspree.io/f/meqwjjon" method="POST" class="contact">
           <label for="name" class="titlesk">name</label>
-          <input type="text" id="name">
+          <input type="text" id="name" name="name">
 
           <label for="email" class="titlesk">email</label>
-          <input type="email" id="email">
+          <input type="email" id="email" name="email">
 
           <label for="message" class="titlesk">message</label>
-          <textarea id="message" rows="7"></textarea>
+          <textarea required id="message" name="message" rows="7"></textarea>
 
-          <button>send</button>
+          <input class="buttonesk titlesk" type="submit" value="send">
         </form>
       </div><!-- /.wrapper -->
     </section> <!-- /.contact-->

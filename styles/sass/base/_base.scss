@@ -55,6 +55,8 @@ a {
   &:hover,
   &:focus {
     color: $quinary;
+
+    outline: solid  1px $seniary;
   }
 }
 

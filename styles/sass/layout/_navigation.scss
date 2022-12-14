@@ -7,6 +7,8 @@
   height: 50px;
   // padding: 30px;
   color: $quaternary;
+  display: flex;
+  align-items: center;
   
   .flexContainer {
     display: flex;
@@ -15,6 +17,14 @@
     align-items: center;
     position: relative;
   }
+
+  a {
+    padding: 10px 20px;
+  }
+  a:focus,
+  a:hover {
+    color: $seniary;
+  }
 }
 
 
@@ -22,6 +32,11 @@
 .laptopNav {
   // visibility: hidden;
   display: none;
+  width: 40%;
+
+  .pageLinks {
+    display: flex;
+  }
 }
 
 @include devices (laptop){
