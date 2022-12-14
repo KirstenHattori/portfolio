@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -228,17 +228,18 @@ html {
 
 h1 {
   font-family: "Josefin Slab", serif;
-  font-size: 2rem;
-  font-weight: regular;
+  font-size: 3rem;
+  font-weight: bold;
   text-transform: uppercase;
   color: rgb(248, 244, 243);
 }
 
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-transform: uppercase;
+  line-height: 3rem;
 }
 
 h3,
@@ -247,12 +248,14 @@ p {
   font-family: "Josefin Slab", serif;
   font-size: 1.2rem;
   font-weight: regular;
+  line-height: 1.3rem;
 }
 
 h4 {
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  font-weight: regular;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 3rem;
 }
 
 h5,
@@ -261,8 +264,9 @@ button,
 .titlesk {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
+  line-height: 1.5rem;
 }
 
 h6,
@@ -307,7 +311,7 @@ button {
 }
 
 section {
-  margin: 10vh 0;
+  margin: 20vh 0;
   padding: 0;
 }
 
@@ -533,6 +537,26 @@ header .txtContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.contact .flexContainer .txtContainer {
+  min-width: 250px;
+  padding-bottom: 30px;
+}
+@media (min-width: 769px) {
+  .contact .flexContainer .txtContainer {
+    width: 40%;
+  }
+}
+.contact .flexContainer .contactLinks {
+  width: 150px;
+  color: rgb(102, 20, 34);
+}
+.contact .flexContainer .contactLinks a:focus,
+.contact .flexContainer .contactLinks a:hover {
+  color: rgb(219, 153, 153);
+}
+.contact .flexContainer .contactLinks i {
+  font-size: 1.5rem;
+}
 .contact .flexContainer form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,14 +569,9 @@ header .txtContainer {
   width: 100%;
   margin-bottom: 20px;
 }
-@media (min-width: 481px) {
+@media (min-width: 769px) {
   .contact .flexContainer form {
     width: 55%;
-  }
-}
-@media (min-width: 481px) {
-  .contact .flexContainer .txtContainer {
-    width: 40%;
   }
 }
 

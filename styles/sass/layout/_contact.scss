@@ -4,9 +4,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    // .txtContainer {
-    //   width: ;
-    // }
+    .txtContainer {
+      min-width: 250px;
+      padding-bottom: 30px;
+      
+      @include devices (laptop) {
+        width: 40%;
+      }
+    }
+
+    .contactLinks {
+      width: 150px;
+      color: $quinary;
+      a:focus,
+      a:hover {
+        color: $seniary;
+      }
+      
+      i {
+        font-size: 1.5rem;
+      }
+    }
 
     form{
       display: flex;
@@ -23,15 +41,13 @@
         // }
       }
 
-      @include devices (tablet) {
+      @include devices (laptop) {
         width: 55%;
       }
     }
 
-@include devices (tablet) {
-    .txtContainer {
-      width: 40%;
-    }
-}
+    
   }
+
 }
+

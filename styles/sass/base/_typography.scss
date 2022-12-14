@@ -3,14 +3,15 @@ html {
 }
 
 h1 {
-  @include fontFamilySizeWeight($primaryFont, 2, regular);
+  @include fontFamilySizeWeight($primaryFont, 3, bold);
   text-transform: uppercase;
   color: $quaternary;
 }
 
 h2 {
-  @include fontFamilySizeWeight($secondaryFont, 1.5, 700);
+  @include fontFamilySizeWeight($secondaryFont, 2.5, 600);
   text-transform: uppercase;
+  line-height: 3rem;
 }
 
 h3,
@@ -18,18 +19,21 @@ h6,
 p {
   // @include fontFamilySizeWeight();
   @include fontFamilySizeWeight($primaryFont, 1.2, regular);
+  line-height: 1.3rem;
 }
 
 h4 {
-  @include fontFamilySizeWeight($secondaryFont, 1, regular);
+  @include fontFamilySizeWeight($secondaryFont, 1.4, 600);
+  line-height: 3rem;
 }
 
 h5,
 a, 
 button,
 .titlesk {
-  @include fontFamilySizeWeight($secondaryFont, 1, bold);
+  @include fontFamilySizeWeight($secondaryFont, 1, 600);
   text-transform: uppercase;
+  line-height: 1.5rem;
 }
 
 h6,
