@@ -423,8 +423,32 @@ button:hover, button:focus {
     display: block;
   }
 }
+.slideController {
+  font-size: 1.5rem;
+}
+
 .slider {
-  position: fixed;
+  position: relative;
+}
+.slider .columnal {
+  background-color: rgba(24, 29, 56, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.slider .columnal li,
+.slider .columnal a {
+  width: 100%;
 }
 
 header {
