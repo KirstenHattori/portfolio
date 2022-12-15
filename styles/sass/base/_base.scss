@@ -77,11 +77,17 @@ button {
   }
 }
 
-.also,
+.also {
+  background-color: $quinary;
+  padding: 10px 40px;
+  color: $quaternary;
+  border: none;
+
+}
 .buttonesk {
   background-color: $seniary;
   padding: 10px 40px;
-  color: $quaternary;
+  color: $primary;
   border: none;
 
   &:hover,
