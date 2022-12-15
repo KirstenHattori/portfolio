@@ -311,7 +311,7 @@ button {
 }
 
 section {
-  margin: 20vh 0;
+  margin: 150px 0;
   padding: 0;
 }
 
@@ -329,19 +329,25 @@ ul {
   list-style: none;
 }
 
-button,
+button {
+  color: rgb(248, 244, 243);
+  border: none;
+  background-color: rgba(20, 46, 31, 0);
+}
+button:hover, button:focus {
+  cursor: pointer;
+  color: rgb(219, 153, 153);
+}
+
 .buttonesk {
   background-color: rgb(219, 153, 153);
   padding: 10px 40px;
   color: rgb(248, 244, 243);
   border: none;
 }
-button:hover, button:focus,
-.buttonesk:hover,
-.buttonesk:focus {
+.buttonesk:hover, .buttonesk:focus {
   cursor: pointer;
   background-color: rgb(102, 20, 34);
-  color: rgb(248, 244, 243);
 }
 
 .wrapper {
@@ -470,7 +476,8 @@ header h5 {
   }
 }
 .about .flexContainer img {
-  height: 650px;
+  max-height: 800px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -540,6 +547,8 @@ header h5 {
 }
 .projects .project img {
   max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .projects .projectLinks {
   display: -webkit-box;
@@ -554,7 +563,7 @@ header h5 {
     width: 55%;
   }
   .projects img {
-    width: 35%;
+    width: 40%;
   }
 }
 
@@ -596,13 +605,17 @@ header h5 {
       flex-wrap: wrap;
 }
 .contact .flexContainer form input {
-  height: 2rem;
+  height: 2.5rem;
 }
 .contact .flexContainer form input,
 .contact .flexContainer form textarea {
   width: 100%;
   margin-bottom: 20px;
   border: none;
+}
+.contact .flexContainer form .submit {
+  width: auto;
+  height: auto;
 }
 @media (min-width: 769px) {
   .contact .flexContainer form {
