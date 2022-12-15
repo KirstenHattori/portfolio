@@ -43,6 +43,13 @@
         // &:hover {
         //   border: 1pc dotted cyan;
         // }
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          // background-color: $seniary;
+          // color: $primary;
+          outline: solid 2px $seniary;
+        }
       }
 
       .submit {
