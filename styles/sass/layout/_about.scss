@@ -5,6 +5,7 @@
     flex-direction: column;
     // flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     
     @include devices (laptop) {
       flex-direction: row;
@@ -12,10 +13,9 @@
 
     
     img {
-      max-height: 800px;
+      max-height: 500px;
       height: 100%;
-      object-fit: cover;
-
+      object-fit: contain;
     }
 
     .txtContainer,
