@@ -21,19 +21,24 @@
 
       <nav class="mobileNav">
         
-        <button class="slideController">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-bars-staggered"></i>
-          <i class="fa-solid fa-lines-leaning"></i>
-        </button><!--/.slideController-->
+        <div class="slideController">
+
+          <button id="closed">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button id="open" class="nunya">
+            <i class="fa-solid fa-lines-leaning"></i>
+          </button>
+
+        </div><!--/.slideController-->
         
         <div class="slider">
-          <ul class="pageLinks columnal">
+          <ul id="slider" class="pageLinks columnal nunya">
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
-        </div><!-- /.slider -->
+        </div>
       </nav><!--/.mobileNav-->
 
       <nav class="laptopNav">
@@ -60,13 +65,16 @@
       <div class="wrapper flexContainer">
         <div class="txtContainer">
           <h2>who am i?</h2>
-          <p>Helloooo! I'm Kirsten Hattori, a front end web developer driven by learning and skill development in all facets of life. A creative problem solver with a keen eye for detail who enjoys writing clean, responsive, and accessible code while drawing on knowledge of UX design principles and practices.
+          <p>
+            Helloooo! I'm Kirsten Hattori, a front end web developer driven by learning and skill development in all facets of life. A creative problem solver with a keen eye for detail who enjoys writing clean, responsive, and accessible code while drawing on knowledge of UX design principles and practices.
           </p>
           <p>
-            With a professional background in retail and e-commerce on teams from customer service, merchandizing, order fulfillment, and business operations combined with a passion for shopping small, independent, and local I would like to work with independent, small, and local businesses and creators to enhance their online presence.
+            With a professional background in retail and e-commerce on teams from customer service, merchandizing, order fulfillment, and business operations combined with a passion for shopping small and local I would like to work with independent businesses and creators to enhance their online presence.
           </p> 
           <p>
-            My education before bootcamp focused on interdisciplinary studies with a focus on psychology and sociology studying towards a profession in special education. My own experience with special education inspired this desire in me to help learners of all abilities make their strengths and weaknesses work for them.
+            My education before bootcamp I studied interdisciplinary studies with a focus on psychology and sociology. 
+             studying towards a profession in special education. , inspired by my personal experience 
+            . My own experience with special education inspired .
           </p>
           <p>
             Outside of learning, my interests include knitting, skiing, gardening, jigsaw and sudoku puzzles, and hiking with my doggo, Murphy. 
@@ -173,7 +181,7 @@
               <div class="txtContainer">
                 <h4>Gettin' Games</h4>
                 <h5>HTML5 | CSS3 | SCSS | JS | Git | GitHub | Miro | Asana</h5>
-                <p>Original UI design, interactive web application utilizing user selections to make an API call and display a list of video games that meets their filter criteria. <br> Made with <a href="">Terri Yiu</a></p>
+                <p>Original UI design, interactive web application utilizing user selections to make an API call and display a list of video games that meets their filter criteria. <br> Made with <a href="https://terri-yiu.com/">Terri Yiu</a></p>
                 <ul class="projectLinks">
                   <li><a aria-description="go to GitHub repo for Gettin' Game's codebase" href="https://github.com/tyiu130/gettingGames.git" class="buttonesk">code</a></li>
                   <li><a aria-description="go to live site of Gettin' Games" href="https://gettin-games.netlify.app/" class="buttonesk">live</a></li>

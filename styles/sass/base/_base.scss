@@ -73,6 +73,7 @@ button {
   &:focus {
     cursor: pointer;
     color: $seniary;
+    outline: solid 1px $seniary;
   }
 }
 

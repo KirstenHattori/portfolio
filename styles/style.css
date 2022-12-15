@@ -337,6 +337,7 @@ button {
 button:hover, button:focus {
   cursor: pointer;
   color: rgb(219, 153, 153);
+  outline: solid 1px rgb(219, 153, 153);
 }
 
 .also,
@@ -423,14 +424,21 @@ button:hover, button:focus {
     display: block;
   }
 }
-.slideController {
+i {
   font-size: 1.5rem;
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+  color: rgb(219, 153, 153);
+  outline: solid 1px rgb(219, 153, 153);
 }
 
 .slider {
   position: relative;
 }
-.slider .columnal {
+
+.columnal {
   background-color: rgba(24, 29, 56, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,9 +454,13 @@ button:hover, button:focus {
   top: 8px;
   right: 0;
 }
-.slider .columnal li,
-.slider .columnal a {
+.columnal li,
+.columnal a {
   width: 100%;
+}
+
+.nunya {
+  display: none;
 }
 
 header {
@@ -645,7 +657,6 @@ header h5 {
 .contact .flexContainer form input:hover, .contact .flexContainer form input:focus,
 .contact .flexContainer form textarea:hover,
 .contact .flexContainer form textarea:focus {
-  cursor: pointer;
   outline: solid 2px rgb(219, 153, 153);
 }
 .contact .flexContainer form .submit {

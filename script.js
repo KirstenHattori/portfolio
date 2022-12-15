@@ -1,6 +1,7 @@
-//Rhymes with Kirsten Hattori fun! 
-  //stretch goal = name space this functionality if all the js is going to be in one place
+//STRETCH GOAL(S):
+  // name space this functionality and any others if all the js is going to be in one place
 
+//Rhymes with Kirsten Hattori fun! 
 const rhymes = {
   'firstSyllable': [
     'beers',
@@ -92,3 +93,37 @@ const button = document.querySelector('.also');
 button.onclick = function () {
   rhymesWith();
 }
+
+
+
+//mobileNav .slideController ~~~~~~~
+
+//event listener and handler on .slideOCntroller
+const slideController = document.querySelector('.slideController');
+
+const slider = document.querySelector('#slider');
+const closed = document.querySelector('#closed');
+const open = document.querySelector('#open');
+
+slideController.onclick = function () {
+  slider.classList.toggle('nunya');
+  closed.classList.toggle('nunya');
+  open.classList.toggle('nunya');
+  
+  // slideController.innerHTML = `<i class="fa-solid fa-lines-leaning"></i>`;
+
+  // console.log(slide.innerHTML);
+  // if (slide.innerHTML === `<i class="fa-solid fa-bars"></i>` ){
+  //   slide.innerHTML = `<i class="fa-solid fa-lines-leaning"></i>`
+  // } else if (slide.innerHTML === `<i class="fa-solid fa-lines-leaning"></i>`) {
+  //   slide.innerHTML = `<i class="fa-solid fa-bars"></i>`
+  // }
+}
+
+//when clicked: 
+  //change the classlist to be the opposite
+  //change visibility of slider to the opposite
+
+
+  // 
+  // <i class="fa-solid fa-lines-leaning"></i>

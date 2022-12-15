@@ -49,29 +49,41 @@
   }
 }
 
-.slideController {
+i{
   font-size: 1.5rem;
+}
+button{
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $seniary;
+    outline: solid 1px $seniary;
+  }
 }
 
 .slider {
   position: relative;
-  
-  .columnal {
-    background-color: $tertiary;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 8px;
-    right: 0;
+}
 
-    li,
-    a {
-      width: 100%;
-    }
+.columnal {
+  background-color: $tertiary;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  li,
+  a {
+    width: 100%;
   }
 }
 
+
+.nunya {
+  display: none;
+}
 // .slideController {
 //   position: absolute;
 //   right: 0;
@@ -102,3 +114,4 @@
 //     right: 0;
 //   }
 // }
+
